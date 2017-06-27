@@ -83,7 +83,7 @@ public private(set) var GlossDateFormatterISO8601: DateFormatter = {
     
     // WORKAROUND to ignore device configuration regarding AM/PM http://openradar.appspot.com/radar?id=1110403
     dateFormatterISO8601.locale = Locale(identifier: "en_US_POSIX")
-    dateFormatterISO8601.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+    dateFormatterISO8601.dateFormat = "yyyy-MM-dd'T'hh:mm:ssZZZZZ"
 
     // translate to Gregorian calendar if other calendar is selected in system settings
     var gregorian = Calendar(identifier: Calendar.Identifier.gregorian)
